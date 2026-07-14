@@ -1,0 +1,1834 @@
+/*==================================================
+
+BookingBot Platform
+Style.css
+Part 1
+
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#f7f9fc;
+
+    color:#1b2430;
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+.container{
+
+    width:90%;
+    max-width:1280px;
+    margin:auto;
+
+}
+
+/*========================================*/
+
+:root{
+
+--primary:#28c76f;
+
+--primary-dark:#16a34a;
+
+--secondary:#00b8ff;
+
+--dark:#1f2937;
+
+--gray:#6b7280;
+
+--light:#ffffff;
+
+--border:#e5e7eb;
+
+--background:#f7f9fc;
+
+--shadow:
+
+0 15px 40px rgba(0,0,0,.08);
+
+--radius:22px;
+
+}
+
+/*========================================*/
+
+section{
+
+    padding:110px 0;
+
+}
+
+/*========================================*/
+
+.section-title{
+
+text-align:center;
+
+max-width:850px;
+
+margin:auto auto 70px;
+
+}
+
+.section-title span{
+
+display:inline-block;
+
+padding:8px 18px;
+
+border-radius:100px;
+
+background:#e9fff2;
+
+color:var(--primary-dark);
+
+font-weight:700;
+
+margin-bottom:18px;
+
+}
+
+.section-title h2{
+
+font-size:46px;
+
+font-weight:800;
+
+line-height:1.2;
+
+margin-bottom:20px;
+
+color:var(--dark);
+
+}
+
+.section-title p{
+
+font-size:20px;
+
+color:var(--gray);
+
+}
+
+/*========================================*/
+
+.header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:rgba(255,255,255,.88);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(0,0,0,.05);
+
+z-index:9999;
+
+}
+
+.navbar{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+height:82px;
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-weight:800;
+
+color:var(--dark);
+
+}
+
+.logo span{
+
+color:var(--primary);
+
+}
+
+nav{
+
+display:flex;
+
+gap:38px;
+
+}
+
+nav a{
+
+font-weight:600;
+
+color:#374151;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:var(--primary);
+
+}
+
+.btn-header{
+
+background:var(--primary);
+
+padding:14px 24px;
+
+border-radius:14px;
+
+color:white;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.btn-header:hover{
+
+background:var(--primary-dark);
+
+transform:translateY(-3px);
+
+}
+
+/*========================================*/
+
+.hero{
+
+padding-top:170px;
+
+padding-bottom:130px;
+
+background:
+
+radial-gradient(circle at top left,#d9fff1 0%,transparent 45%),
+
+radial-gradient(circle at right,#d7f3ff 0%,transparent 40%),
+
+white;
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+background:#eafff3;
+
+padding:10px 22px;
+
+border-radius:100px;
+
+font-weight:700;
+
+color:var(--primary-dark);
+
+margin-bottom:28px;
+
+}
+
+.hero h1{
+
+font-size:62px;
+
+line-height:1.05;
+
+font-weight:900;
+
+margin-bottom:28px;
+
+color:#111827;
+
+}
+
+.hero-text{
+
+font-size:21px;
+
+color:#4b5563;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:18px;
+
+margin-bottom:55px;
+
+}
+
+.btn{
+
+background:var(--primary);
+
+color:white;
+
+padding:18px 36px;
+
+border-radius:16px;
+
+font-weight:700;
+
+transition:.3s;
+
+box-shadow:0 12px 30px rgba(40,199,111,.3);
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+background:var(--primary-dark);
+
+}
+
+.btn-outline{
+
+border:2px solid var(--primary);
+
+padding:18px 36px;
+
+border-radius:16px;
+
+font-weight:700;
+
+color:var(--primary);
+
+transition:.3s;
+
+}
+
+.btn-outline:hover{
+
+background:var(--primary);
+
+color:white;
+
+}
+
+.hero-features{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+}
+
+.hero-features div{
+
+background:white;
+
+padding:22px;
+
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+text-align:center;
+
+}
+
+.hero-features h3{
+
+font-size:28px;
+
+color:var(--primary);
+
+margin-bottom:6px;
+
+}
+
+.hero-features p{
+
+font-size:15px;
+
+color:#6b7280;
+
+}
+
+.hero-right img{
+
+border-radius:28px;
+
+box-shadow:
+
+0 30px 60px rgba(0,0,0,.12);
+
+transition:.5s;
+
+}
+
+.hero-right img:hover{
+
+transform:translateY(-10px);
+
+}
+
+/*==================================================
+BookingBot Platform
+style.css
+Part 2
+==================================================*/
+
+
+/*==========================================
+INTRO
+==========================================*/
+
+.intro{
+
+    background:#ffffff;
+
+}
+
+.platform-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+.platform-card{
+
+    background:#fff;
+
+    border:1px solid #edf1f7;
+
+    border-radius:24px;
+
+    padding:40px 34px;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.platform-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:4px;
+
+    background:linear-gradient(90deg,#28c76f,#00b8ff);
+
+    transform:scaleX(0);
+
+    transition:.35s;
+
+}
+
+.platform-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(15,23,42,.12);
+
+}
+
+.platform-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+.platform-icon{
+
+    width:70px;
+    height:70px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:34px;
+
+    background:linear-gradient(135deg,#28c76f,#00b8ff);
+
+    color:#fff;
+
+    margin-bottom:25px;
+
+}
+
+.platform-card h3{
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+    color:#1f2937;
+
+}
+
+.platform-card p{
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+}
+
+
+
+/*==========================================
+SCREENS
+==========================================*/
+
+.screens{
+
+    background:#f7f9fc;
+
+}
+
+.screens-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.screen{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.screen:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.screen img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.screen h3{
+
+    text-align:center;
+
+    padding:22px;
+
+    font-size:24px;
+
+}
+
+
+
+/*==========================================
+RESOURCES
+==========================================*/
+
+.resources{
+
+    background:white;
+
+}
+
+.resource-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.resource-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:38px;
+
+    border:1px solid #eef2f7;
+
+    transition:.35s;
+
+}
+
+.resource-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.resource-card h3{
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    color:#111827;
+
+}
+
+.resource-card p{
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+}
+
+
+
+/*==========================================
+BOOKING TYPES
+==========================================*/
+
+.booking-types{
+
+    background:linear-gradient(#f7fbff,#ffffff);
+
+}
+
+.types-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+.type-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:34px;
+
+    transition:.35s;
+
+    text-align:center;
+
+    border:1px solid #edf1f7;
+
+}
+
+.type-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.08);
+
+}
+
+.type-card h3{
+
+    font-size:25px;
+
+    margin-bottom:18px;
+
+    color:#111827;
+
+}
+
+.type-card p{
+
+    color:#6b7280;
+
+}
+
+
+
+/*==========================================
+AVAILABILITY
+==========================================*/
+
+.availability{
+
+    background:white;
+
+}
+
+.availability-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.availability h2{
+
+    font-size:46px;
+
+    line-height:1.2;
+
+    margin-bottom:30px;
+
+}
+
+.availability p{
+
+    color:#6b7280;
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+.availability ul{
+
+    list-style:none;
+
+}
+
+.availability li{
+
+    margin-bottom:18px;
+
+    font-size:19px;
+
+    color:#374151;
+
+}
+
+.availability img{
+
+    border-radius:28px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.10);
+
+}
+
+
+
+/*==========================================
+SMALL ANIMATIONS
+==========================================*/
+
+.resource-card,
+.type-card,
+.platform-card,
+.screen{
+
+    cursor:default;
+
+}
+
+.resource-card:hover h3,
+.type-card:hover h3,
+.platform-card:hover h3{
+
+    color:#28c76f;
+
+    transition:.3s;
+
+}
+
+
+/*==================================================
+BookingBot Platform
+style.css
+Part 3
+==================================================*/
+
+
+/*==========================================
+PAYMENTS
+==========================================*/
+
+.payments{
+
+    background:#f7f9fc;
+
+}
+
+.payment-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.payment-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    border:1px solid #edf1f7;
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.payment-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.08);
+
+}
+
+.payment-card h3{
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+    color:#111827;
+
+}
+
+.payment-card p{
+
+    color:#6b7280;
+
+    line-height:2;
+
+}
+
+
+/*==========================================
+QR SECTION
+==========================================*/
+
+.qr-section{
+
+    background:white;
+
+}
+
+.qr-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.qr-image img{
+
+    border-radius:30px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.10);
+
+}
+
+.feature-item{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    border:1px solid #edf1f7;
+
+    padding:28px;
+
+    margin-bottom:22px;
+
+    transition:.3s;
+
+}
+
+.feature-item:hover{
+
+    transform:translateX(10px);
+
+    border-left:5px solid var(--primary);
+
+}
+
+.feature-item h3{
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+    color:#111827;
+
+}
+
+.feature-item p{
+
+    color:#6b7280;
+
+}
+
+
+/*==========================================
+DOCUMENTS
+==========================================*/
+
+.documents{
+
+    background:#f7f9fc;
+
+}
+
+.cards-three{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.doc-card{
+
+    background:white;
+
+    padding:38px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    border:1px solid #edf1f7;
+
+}
+
+.doc-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.doc-card h3{
+
+    margin-bottom:18px;
+
+    font-size:26px;
+
+}
+
+.doc-card p{
+
+    color:#6b7280;
+
+}
+
+
+/*==========================================
+FISCAL
+==========================================*/
+
+.fiscal{
+
+    background:white;
+
+}
+
+.fiscal-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.fiscal h2{
+
+    font-size:46px;
+
+    margin-bottom:25px;
+
+}
+
+.fiscal p{
+
+    color:#6b7280;
+
+    margin-bottom:25px;
+
+    font-size:19px;
+
+}
+
+.fiscal ul{
+
+    list-style:none;
+
+}
+
+.fiscal li{
+
+    padding:12px 0;
+
+    font-size:18px;
+
+    border-bottom:1px solid #eef2f7;
+
+}
+
+.note{
+
+    margin-top:25px;
+
+    font-size:14px!important;
+
+    color:#9ca3af!important;
+
+}
+
+.fiscal img{
+
+    border-radius:28px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.10);
+
+}
+
+
+/*==========================================
+ADVANTAGES
+==========================================*/
+
+.advantages{
+
+    background:#f7f9fc;
+
+}
+
+.adv-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.adv-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:36px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    border:1px solid #edf1f7;
+
+}
+
+.adv-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.adv-card h3{
+
+    font-size:28px;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.adv-card p{
+
+    color:#6b7280;
+
+}
+
+
+/*==========================================
+CTA
+==========================================*/
+
+.cta{
+
+    background:linear-gradient(135deg,#28c76f,#00b8ff);
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.cta h2{
+
+    font-size:54px;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    font-size:22px;
+
+    max-width:850px;
+
+    margin:auto auto 45px;
+
+    opacity:.95;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.cta .btn{
+
+    background:white;
+
+    color:#111827;
+
+}
+
+.cta .btn:hover{
+
+    background:#f3f4f6;
+
+}
+
+.cta .btn-outline{
+
+    border:2px solid white;
+
+    color:white;
+
+}
+
+.cta .btn-outline:hover{
+
+    background:white;
+
+    color:#111827;
+
+}
+
+
+/*==========================================
+FOOTER
+==========================================*/
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    padding:80px 0 30px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:60px;
+
+}
+
+footer h3{
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+footer h4{
+
+    margin-bottom:20px;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+}
+
+footer a{
+
+    display:block;
+
+    color:#cbd5e1;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+footer a:hover{
+
+    color:white;
+
+}
+
+.copyright{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:25px;
+
+}
+
+
+/*==========================================
+HOVER EFFECTS
+==========================================*/
+
+.payment-card:hover h3,
+.doc-card:hover h3,
+.adv-card:hover h3{
+
+    color:var(--primary);
+
+    transition:.3s;
+
+}
+
+button,
+.btn,
+.btn-header,
+.btn-outline{
+
+    cursor:pointer;
+
+}
+
+/*==================================================
+BookingBot Platform
+style.css
+Part 4
+Responsive + Premium UI
+==================================================*/
+
+
+/*==========================================
+SCROLLBAR
+==========================================*/
+
+::-webkit-scrollbar{
+
+    width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#edf2f7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(#28c76f,#00b8ff);
+
+    border-radius:20px;
+
+}
+
+
+
+/*==========================================
+TEXT SELECTION
+==========================================*/
+
+::selection{
+
+    background:#28c76f;
+
+    color:white;
+
+}
+
+
+
+/*==========================================
+SMOOTH ANIMATIONS
+==========================================*/
+
+section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+
+
+/*==========================================
+BUTTON EFFECT
+==========================================*/
+
+.btn,
+.btn-header,
+.btn-outline{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.btn::before,
+.btn-header::before{
+
+content:"";
+
+position:absolute;
+
+left:-120%;
+
+top:0;
+
+width:120%;
+
+height:100%;
+
+background:rgba(255,255,255,.25);
+
+transform:skewX(-25deg);
+
+transition:.6s;
+
+}
+
+.btn:hover::before,
+.btn-header:hover::before{
+
+left:130%;
+
+}
+
+
+
+/*==========================================
+IMAGE EFFECTS
+==========================================*/
+
+.screen img,
+.hero-right img,
+.qr-image img,
+.fiscal img,
+.availability img{
+
+transition:.5s;
+
+}
+
+.screen:hover img{
+
+transform:scale(1.04);
+
+}
+
+
+
+/*==========================================
+CARD EFFECTS
+==========================================*/
+
+.platform-card,
+.resource-card,
+.type-card,
+.payment-card,
+.doc-card,
+.adv-card{
+
+transition:.35s;
+
+}
+
+.platform-card:hover,
+.resource-card:hover,
+.type-card:hover,
+.payment-card:hover,
+.doc-card:hover,
+.adv-card:hover{
+
+border-color:#28c76f;
+
+}
+
+
+
+/*==========================================
+LINK EFFECT
+==========================================*/
+
+nav a{
+
+position:relative;
+
+}
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-6px;
+
+left:0;
+
+width:0;
+
+height:3px;
+
+background:#28c76f;
+
+transition:.3s;
+
+border-radius:20px;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+
+
+/*==========================================
+RESPONSIVE
+==========================================*/
+
+@media(max-width:1200px){
+
+.hero h1{
+
+font-size:54px;
+
+}
+
+.section-title h2{
+
+font-size:40px;
+
+}
+
+.hero-grid,
+.qr-grid,
+.fiscal-grid,
+.availability-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-right{
+
+margin-top:40px;
+
+}
+
+}
+
+
+
+@media(max-width:992px){
+
+.platform-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.resource-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.types-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.payment-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.cards-three{
+
+grid-template-columns:1fr;
+
+}
+
+.adv-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-features{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+nav{
+
+display:none;
+
+}
+
+.btn-header{
+
+display:none;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+.hero{
+
+padding-top:130px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero-text{
+
+font-size:18px;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.section-title p{
+
+font-size:18px;
+
+}
+
+.platform-grid,
+.resource-grid,
+.types-grid,
+.screens-grid,
+.adv-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-features{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.cta h2{
+
+font-size:40px;
+
+}
+
+.cta p{
+
+font-size:18px;
+
+}
+
+.cta-buttons{
+
+flex-direction:column;
+
+}
+
+.container{
+
+width:92%;
+
+}
+
+}
+
+
+
+@media(max-width:480px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+.hero-features{
+
+grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+font-size:28px;
+
+}
+
+.btn,
+.btn-outline{
+
+width:100%;
+
+text-align:center;
+
+}
+
+section{
+
+padding:70px 0;
+
+}
+
+}
+
+
+
+/*==========================================
+END
+==========================================*/
+
+/*==========================================
+NEW SECTIONS ADDED
+==========================================*/
+.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+.how-step{background:#fff;border:1px solid #edf1f7;border-radius:20px;padding:28px;text-align:center;transition:.3s;}
+.how-step:hover{transform:translateY(-8px);box-shadow:0 20px 45px rgba(0,0,0,.08);}
+.how-num{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#28c76f,#00b8ff);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;margin:0 auto 14px;}
+.fund-list li{margin-bottom:14px;font-size:18px;color:#374151;list-style:none;}
+.calendar-img{border-radius:28px;box-shadow:0 25px 60px rgba(0,0,0,.10);display:block;margin:auto;}
+.compare-table{width:100%;border-collapse:collapse;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,.06);}
+.compare-table th,.compare-table td{padding:18px 22px;text-align:left;border-bottom:1px solid #edf1f7;}
+.compare-table th{background:#111827;color:#fff;font-size:18px;}
+.compare-table td:first-child{color:#9ca3af;}
+.compare-table td:last-child{color:#16a34a;font-weight:700;}
+.saas-list{list-style:none;max-width:500px;margin:0 auto 20px;}
+.saas-list li{padding:12px 0;font-size:18px;border-bottom:1px solid #eef2f7;}
+.saas-note{text-align:center;color:#6b7280;font-size:18px;}
+
+
+/*==========================================
+TARIFFS
+==========================================*/
+.tariffs{background:#f7f9fc;}
+.tariff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;align-items:stretch;}
+.tariff-card{background:#fff;border:1px solid #edf1f7;border-radius:24px;padding:40px 34px;position:relative;transition:.35s;display:flex;flex-direction:column;}
+.tariff-card:hover{transform:translateY(-10px);box-shadow:0 25px 50px rgba(0,0,0,.08);}
+.tariff-card.featured{border:2px solid #28c76f;box-shadow:0 25px 60px rgba(40,199,111,.15);}
+.tariff-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#28c76f,#00b8ff);color:#fff;padding:6px 18px;border-radius:100px;font-size:13px;font-weight:700;}
+.tariff-card h4{font-size:24px;color:#111827;margin-bottom:10px;}
+.tariff-price{font-size:38px;font-weight:900;color:var(--primary-dark);margin-bottom:8px;}
+.tariff-price span{font-size:15px;color:#9ca3af;font-weight:600;}
+.tariff-desc{color:#6b7280;margin-bottom:22px;}
+.tariff-list{list-style:none;margin-bottom:30px;flex-grow:1;}
+.tariff-list li{padding:8px 0;font-size:16px;color:#374151;}
+.tariff-card .btn,.tariff-card .btn-outline{text-align:center;}
+.tariff-note{text-align:center;color:#9ca3af;font-size:14px;margin-top:35px;}
+@media(max-width:992px){
+.tariff-grid{grid-template-columns:1fr;}
+}
