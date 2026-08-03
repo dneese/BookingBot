@@ -3,9 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BookingBot Platform — Автоматизація бронювання, оплати та контролю доступу</title>
+<title>BookingBot Platform — автоматизація бронювання, онлайн-оплати та контролю доступу</title>
+<meta name="description" content="BookingBot Platform — SaaS-платформа для автоматизації бронювання, онлайн-оплати та контролю доступу. Telegram-бот, адмінпанель, QR-квитки, календар бронювань. Базовий тариф — 0 грн.">
+<meta name="keywords" content="бронювання онлайн, Telegram бот бронювання, онлайн оплата, QR квитки, автоматизація бронювання, адмінпанель, подобове бронювання, оренда, готель, чан, сауна, басейн, прокат">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#28c76f">
+<meta name="author" content="BookingBot Platform">
+<link rel="canonical" href="https://bookingbot.pp.ua/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="BookingBot Platform">
+<meta property="og:title" content="BookingBot Platform — автоматизація бронювання, онлайн-оплати та контролю доступу">
+<meta property="og:description" content="Клієнти бронюють і оплачують самостійно у Telegram: без дзвінків, подвійних бронювань і паперових списків. Адмінпанель, QR-квитки, онлайн-оплата. Базовий тариф — 0 грн.">
+<meta property="og:url" content="https://bookingbot.pp.ua/">
+<meta property="og:image" content="https://bookingbot.pp.ua/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="BookingBot Platform — автоматизація бронювання, онлайн-оплати та контролю доступу">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BookingBot Platform — автоматизація бронювання, онлайн-оплати та контролю доступу">
+<meta name="twitter:description" content="Клієнти бронюють і оплачують самостійно у Telegram. Адмінпанель, QR-квитки, онлайн-оплата. Базовий тариф — 0 грн.">
+<meta name="twitter:image" content="https://bookingbot.pp.ua/assets/og-cover.png">
+
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://bookingbot.pp.ua/#website",
+      "url": "https://bookingbot.pp.ua/",
+      "name": "BookingBot Platform",
+      "description": "SaaS-платформа для автоматизації бронювання, онлайн-оплати та контролю доступу у Telegram.",
+      "inLanguage": "uk"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bookingbot.pp.ua/#organization",
+      "name": "BookingBot Platform",
+      "url": "https://bookingbot.pp.ua/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bookingbot.pp.ua/assets/og-cover.png",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://bookingbot.pp.ua/#software",
+      "name": "BookingBot Platform",
+      "url": "https://bookingbot.pp.ua/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Telegram",
+      "inLanguage": "uk",
+      "description": "Автоматизація бронювання, онлайн-оплати та контролю доступу: Telegram-бот, адмінпанель, QR-квитки, PDF-квитки, фіскалізація.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Базовий тариф",
+          "price": "0",
+          "priceCurrency": "UAH",
+          "description": "До 20 бронювань на місяць: Telegram-бот, адмінпанель, онлайн-оплата, QR-квитки."
+        },
+        {
+          "@type": "Offer",
+          "name": "Стандарт тариф",
+          "price": "499",
+          "priceCurrency": "UAH",
+          "description": "Від 20 до 100 бронювань на місяць, календар зайнятості, статистика та звіти, пріоритетна підтримка."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bookingbot.pp.ua/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чи можна підключити свій Telegram-бот?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Так." }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи можна використовувати власний домен?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Так." }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи підтримує система QR?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Так." }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи підтримує система ПРРО?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Так, через інтеграцію checkbox." }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи можна підключити Monobank?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Так." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -20,7 +129,7 @@
       <a href="#tariffs">Тарифи</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a href="#cta" class="btn-header">Замовити демо</a>
+    <a href="https://bot.bookingbot.pp.ua/admin/" class="btn-header" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
   </div>
 </header>
 
@@ -31,7 +140,7 @@
       <h1>BookingBot Platform — автоматизація бронювання, онлайн-оплати та контролю доступу</h1>
       <p class="hero-text">Єдина система для подобової, погодинної, денної та поштучної оренди: клієнти бронюють і оплачують самостійно, а ви отримуєте менше дзвінків, менше помилок персоналу та більше онлайн-продажів.</p>
       <div class="hero-buttons">
-        <a href="#cta" class="btn">Отримати демо-доступ</a>
+        <a href="https://bot.bookingbot.pp.ua/admin/" class="btn" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
         <a href="#how" class="btn-outline">Як це працює</a>
       </div>
       <div class="hero-features">
@@ -42,7 +151,7 @@
       </div>
     </div>
     <div class="hero-right">
-      <img src="assets/hero-admin.png" alt="Адмінпанель BookingBot Platform">
+      <img src="assets/hero-admin.png" alt="Адмінпанель BookingBot Platform" width="1882" height="925" class="lightbox-image">
     </div>
   </div>
 </section>
@@ -53,7 +162,7 @@
       <span>Як це працює</span>
       <h2>Від бронювання до входу — за 60 секунд</h2>
       <p>Клієнт проходить весь шлях самостійно, без дзвінків та переписок з персоналом.</p>
-      <img src="assets/how-it-works.jpg" alt="Як працює бронювання через Telegram-бота" class="how-image">
+      <img src="assets/how-it-works.jpg" alt="Як працює бронювання через Telegram-бота" class="how-image" width="1536" height="1024" loading="lazy">
     </div>
     <div class="how-grid">
       <div class="how-step"><div class="how-num">1</div><h3>Клієнт заходить у Telegram</h3><p>Відкриває бота без встановлення додатків.</p></div>
@@ -107,7 +216,7 @@
         </ul>
       </div>
       <div>
-        <img src="assets/admin-fund.png" alt="Керування номерним фондом">
+        <img src="assets/admin-fund.png" alt="Керування номерним фондом" width="1906" height="874" class="lightbox-image" loading="lazy">
       </div>
     </div>
   </div>
@@ -120,7 +229,7 @@
       <h2>Інтерактивний календар бронювань</h2>
       <p>Вся зайнятість ресурсів — наочно, в одному екрані.</p>
     </div>
-    <img class="calendar-img" src="assets/calendar.png" alt="Календар бронювань">
+    <img class="calendar-img lightbox-image" src="assets/calendar.png" alt="Календар бронювань" width="1260" height="500" loading="lazy">
   </div>
 </section>
 
@@ -272,7 +381,7 @@
     <div class="tariff-grid">
       <div class="tariff-card">
         <h4>Базовий</h4>
-        <div class="tariff-price">99 грн<span>/міс</span></div>
+        <div class="tariff-price">0 грн<span>/міс</span></div>
         <p class="tariff-desc">Для ознайомлення з платформою</p>
         <ul class="tariff-list">
           <li>✅ До 20 бронювань на місяць</li>
@@ -281,7 +390,7 @@
           <li>✅ Онлайн-оплата</li>
           <li>✅ QR-квитки</li>
         </ul>
-        <a href="#cta" class="btn-outline">Обрати тариф</a>
+        <a href="https://bot.bookingbot.pp.ua/admin/" class="btn-outline" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
       </div>
       <div class="tariff-card featured">
         <span class="tariff-badge">Популярний</span>
@@ -295,20 +404,19 @@
           <li>✅ Статистика та звіти</li>
           <li>✅ Пріоритетна підтримка</li>
         </ul>
-        <a href="#cta" class="btn">Обрати тариф</a>
+        <a href="https://bot.bookingbot.pp.ua/admin/" class="btn" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
       </div>
       <div class="tariff-card">
         <h4>Бізнес</h4>
-        <div class="tariff-price">% від замовлення</span></div>
+        <div class="tariff-price">% від замовлення</div>
         <p class="tariff-desc">Для 100+ бронювань на місяць</p>
         <ul class="tariff-list">
           <li>✅ Понад 100 бронювань на місяць</li>
           <li>✅ домовлений % від суми замовлення</li>
-  
           <li>✅ Фіскалізація та API</li>
           <li>✅ Персональний менеджер</li>
         </ul>
-        <a href="#cta" class="btn-outline">Обрати тариф</a>
+        <a href="https://bot.bookingbot.pp.ua/admin/" class="btn-outline" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
       </div>
     </div>
     <p class="tariff-note">Оплата стягується лише за фактичний обсяг бронювань. Перехід між тарифами відбувається автоматично.</p>
@@ -352,7 +460,7 @@
     <h2>Готові автоматизувати бронювання?</h2>
     <p>BookingBot Platform допоможе автоматизувати бронювання, онлайн-оплату, контроль доступу та роботу персоналу.</p>
     <div class="cta-buttons">
-      <a href="https://telegram.me/sistadmin" class="btn">Отримати демо-доступ</a>
+      <a href="https://bot.bookingbot.pp.ua/admin/" class="btn" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
       <a href="https://telegram.me/sistadmin" class="btn-outline">Написати в Telegram</a>
     </div>
   </div>
@@ -375,11 +483,18 @@
     <div>
       <h4>Контакти</h4>
       <a href="https://telegram.me/sistadmin">Telegram</a>
-      <a href="kikikiska@gmail.com">Email</a>
+      <a href="mailto:kikikiska@gmail.com">Email</a>
     </div>
   </div>
   <div class="copyright">© 2026 BookingBot Platform. Усі права захищено.</div>
 </footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Перегляд зображення">
+  <button class="lightbox-close" aria-label="Закрити">&times;</button>
+  <img class="lightbox-img" src="" alt="">
+</div>
+
+<script src="app.js"></script>
 
 </body>
 </html>
