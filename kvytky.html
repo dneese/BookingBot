@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Продаж квитків на події через Telegram-бота</title>
+<meta name="description" content="Продаж квитків на концерти, вистави та майстер-класи через Telegram-бота: онлайн-оплата, PDF-квиток з QR, контроль доступу на вході. Тариф від 0 грн.">
+<meta name="keywords" content="продаж квитків онлайн, бот для подій, квитки на концерт телеграм, онлайн квитки з QR, продаж квитків через бота, квитки на виставу">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#28c76f">
+<meta name="author" content="BookingBot Platform">
+<link rel="canonical" href="https://bookingbot.pp.ua/kvytky.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="BookingBot Platform">
+<meta property="og:title" content="Продаж квитків на події через Telegram-бота">
+<meta property="og:description" content="Квитки на концерти, вистави та майстер-класи з оплатою онлайн і QR на вході.">
+<meta property="og:url" content="https://bookingbot.pp.ua/kvytky.html">
+<meta property="og:image" content="https://bookingbot.pp.ua/assets/og-cover.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Продаж квитків на події через Telegram-бота">
+<meta name="twitter:description" content="Квитки, абонементи, майстер-класи — оплата онлайн і QR на вході.">
+<meta name="twitter:image" content="https://bookingbot.pp.ua/assets/og-cover.jpg">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "BookingBot Platform", "item": "https://bookingbot.pp.ua/" },
+        { "@type": "ListItem", "position": 2, "name": "Квитки та події", "item": "https://bookingbot.pp.ua/kvytky.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Які події можна продавати?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Концерти, вистави, майстер-класи, лекції, фестивалі — будь-які події з обмеженою кількістю місць." }
+        },
+        {
+          "@type": "Question",
+          "name": "Як клієнт отримує квиток?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Після оплати — миттєво в Telegram у форматі PDF з QR-кодом." }
+        },
+        {
+          "@type": "Question",
+          "name": "Як контролювати кількість місць?",
+          "acceptedAnswer": { "@type": "Answer", "text": "На кожну подію ви задаєте кількість квитків. Коли вони розкуплені — продаж автоматично зупиняється." }
+        },
+        {
+          "@type": "Question",
+          "name": "Як перевірити квитки на вході?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Скануєте QR вбудованим сканером. Вже використаний квиток одразу відхиляється." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container navbar">
+    <div class="logo"><a href="/" style="color:inherit;text-decoration:none;">Booking<span>Bot</span></a></div>
+    <nav>
+      <a href="/">Головна</a>
+      <a href="/#resources">Сценарії</a>
+      <a href="/blog.html">Блог</a>
+      <a href="/#tariffs">Тарифи</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a href="https://bot.bookingbot.pp.ua/admin/" class="btn-header" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
+  </div>
+</header>
+
+<section class="subpage">
+  <div class="container">
+    <nav class="breadcrumbs"><a href="/">Головна</a> → Квитки та події</nav>
+
+    <h1>Продаж квитків на події через Telegram-бота: концерти, вистави, майстер-класи</h1>
+    <p class="lead">Ви створюєте подію в адмінпанелі, задаєте ціну та кількість місць. Клієнти купують квитки в боті, оплачують онлайн і отримують PDF-квиток з QR. На вході персонал сканує QR — пропускна система працює сама.</p>
+
+    <div class="scenario-links">
+      <a href="/hotel.html">🏨 Готель</a>
+      <a href="/chan-sauna.html">🔥 Чан / сауна</a>
+      <a href="/baseyn.html">🏊 Басейн</a>
+      <a href="/prokat.html">🚲 Прокат</a>
+    </div>
+
+    <div class="prose">
+      <div class="highlight-box">
+        <h3>🔎 Як це працює для подій</h3>
+        <p>Ви додаєте подію: назва, дата, час, ціна квитка, кількість місць, фото та опис. Клієнт купує квиток у боті, оплачує карткою або на IBAN і отримує QR-квиток. На вході скануєте QR вбудованим сканером — система одразу показує, дійсний квиток чи вже використаний.</p>
+      </div>
+
+      <h2>Чому організатори обирають BookingBot</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card"><h3>🎟 Без білетерів</h3><p>Квитки продаються онлайн, доступ контролює QR-сканер.</p></div>
+        <div class="benefit-card"><h3>💳 Гроші наперед</h3><p>Оплата миттєво на ваш рахунок — до початку події.</p></div>
+        <div class="benefit-card"><h3>🔢 Ліміт місць</h3><p>Продаж автоматично зупиняється, коли квитки закінчилися.</p></div>
+        <div class="benefit-card"><h3>🔒 Антибот на вході</h3><p>Кожен QR одноразовий — квиток не передати і не використати двічі.</p></div>
+        <div class="benefit-card"><h3>📊 Продажі онлайн</h3><p>Бачите, скільки продано і хто ще не викупив квитки.</p></div>
+        <div class="benefit-card"><h3>🧾 Фіскалізація</h3><p>Опційна інтеграція з ПРРО checkbox.ua.</p></div>
+      </div>
+
+      <h2>Що вміє система продажу квитків</h2>
+      <ol class="steps-list">
+        <li><strong>Створення подій</strong> — дата, час, ціна, кількість квитків, опис і афіша.</li>
+        <li><strong>Онлайн-оплата</strong> — картка, Monobank, Hutko, IBAN.</li>
+        <li><strong>PDF-квиток з QR</strong> — миттєво в Telegram клієнта.</li>
+        <li><strong>QR-сканер на вході</strong> — перевірка за секунду, повторне використання блокується.</li>
+        <li><strong>Абонементи</strong> — серійні квитки на майстер-класи чи цикл занять.</li>
+        <li><strong>Статистика продажів</strong> — виторг і завантаженість кожної події.</li>
+      </ol>
+
+      <h2>Скільки це коштує</h2>
+      <p>Базовий тариф — <strong>0 грн/міс</strong> (до 20 продажів), Стандарт — <strong>499 грн/міс</strong>. Налаштування бота «під ключ» — <strong>1999 грн</strong> разово.</p>
+
+      <div class="highlight-box">
+        <h3>Як почати безкоштовно</h3>
+        <ol class="steps-list" style="margin-top:6px;">
+          <li>Зареєструйтесь в адмінпанелі.</li>
+          <li>Створіть першу подію з ціною та кількістю місць.</li>
+          <li>Увімкніть оплату.</li>
+          <li>Додайте бота в біо Instagram та на сторінку події.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="/blog.html"><small>&larr; Блог</small>Статті про автоматизацію бронювання</a>
+      <a href="/"><small>&rarr; Головна</small>Всі сценарії та тарифи BookingBot</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="container">
+    <h2>Продавайте квитки без посередників</h2>
+    <p>Події, оплата онлайн і QR-контроль на вході. Почніть безкоштовно.</p>
+    <div class="cta-buttons">
+      <a href="https://bot.bookingbot.pp.ua/admin/" class="btn" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
+      <a href="https://telegram.me/sistadmin" class="btn-outline">Написати в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>Booking<span style="color:#28c76f">Bot</span></h3>
+      <p>SaaS-платформа для автоматизації бронювання, онлайн-оплати та контролю доступу.</p>
+    </div>
+    <div>
+      <h4>Сценарії</h4>
+      <a href="/hotel.html">Готель</a>
+      <a href="/chan-sauna.html">Чан / сауна</a>
+      <a href="/baseyn.html">Басейн</a>
+      <a href="/prokat.html">Прокат</a>
+      <a href="/kvytky.html">Квитки та події</a>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <a href="https://telegram.me/sistadmin">Telegram</a>
+      <a href="mailto:kikikiska@gmail.com">Email</a>
+    </div>
+    <div>
+      <h4>Демо та підтримка</h4>
+      <a href="https://t.me/ZarichnaLUX_bot" target="_blank" rel="noopener">Демо-бот</a>
+      <a href="/blog.html">Блог</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 BookingBot Platform. Усі права захищено.</div>
+</footer>
+
+</body>
+</html>

@@ -1907,3 +1907,54 @@ transform:rotate(90deg);
 .lightbox{padding:16px;}
 .lightbox-close{top:10px;right:12px;width:40px;height:40px;font-size:24px;}
 }
+
+/*==========================================
+SEO SUBPAGES & BLOG (2026-09-22)
+==========================================*/
+.subpage{padding:56px 0 24px;background:#fff;}
+.breadcrumbs{font-size:14px;color:#9ca3af;margin-bottom:24px;}
+.breadcrumbs a{color:#28c76f;text-decoration:none;}
+.breadcrumbs a:hover{text-decoration:underline;}
+.subpage h1{font-size:44px;line-height:1.2;color:#111827;margin:0 0 18px;font-weight:900;}
+.subpage .lead{font-size:19px;color:#4b5563;line-height:1.7;max-width:900px;margin:0 0 36px;}
+.prose{max-width:900px;color:#374151;font-size:17px;line-height:1.8;}
+.prose h2{font-size:30px;color:#111827;margin:48px 0 16px;font-weight:800;}
+.prose h3{font-size:23px;color:#111827;margin:32px 0 12px;font-weight:700;}
+.prose p{margin:0 0 18px;}
+.prose ul,.prose ol{margin:0 0 20px;padding-left:24px;}
+.prose li{margin-bottom:8px;}
+.prose a{color:#28c76f;}
+.prose strong{color:#111827;}
+.prose img{border-radius:16px;margin:20px 0;max-width:100%;height:auto;}
+.highlight-box{background:linear-gradient(#f7fbff,#ffffff);border:1px solid #e0f2e9;border-left:5px solid #28c76f;border-radius:14px;padding:22px 26px;margin:26px 0;}
+.highlight-box h3{margin-top:0;}
+.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:28px 0;}
+.benefit-card{background:#fff;border:1px solid #eef2f7;border-radius:18px;padding:24px;}
+.benefit-card h3{font-size:18px;margin:0 0 8px;color:#111827;}
+.benefit-card p{margin:0;color:#6b7280;line-height:1.7;}
+.steps-list{counter-reset:step;list-style:none;padding:0;margin:28px 0;}
+.steps-list li{counter-increment:step;position:relative;padding:14px 0 14px 56px;border-bottom:1px dashed #eef2f7;color:#374151;line-height:1.7;}
+.steps-list li::before{content:counter(step);position:absolute;left:0;top:12px;width:36px;height:36px;border-radius:50%;background:#28c76f;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px;}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin:28px 0;}
+.blog-card{background:#fff;border:1px solid #eef2f7;border-radius:20px;padding:26px;transition:.35s;display:block;color:inherit;text-decoration:none;}
+.blog-card:hover{transform:translateY(-6px);box-shadow:0 20px 45px rgba(0,0,0,.08);}
+.blog-card .blog-tag{font-size:13px;color:#28c76f;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+.blog-card h3{font-size:20px;margin:10px 0;color:#111827;line-height:1.45;}
+.blog-card p{margin:0;color:#6b7280;line-height:1.7;font-size:15px;}
+.blog-card .blog-meta{font-size:13px;color:#9ca3af;margin-top:14px;}
+.article-meta{color:#9ca3af;font-size:15px;margin:0 0 30px;}
+.article-meta a{color:#28c76f;text-decoration:none;}
+.scenario-links{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0;}
+.scenario-links a{border:1px solid #e0e7ee;border-radius:999px;padding:10px 18px;color:#111827;text-decoration:none;font-size:15px;transition:.25s;}
+.scenario-links a:hover{border-color:#28c76f;color:#28c76f;}
+.page-nav{display:flex;justify-content:space-between;gap:20px;margin:40px 0 0;flex-wrap:wrap;}
+.page-nav a{background:#f7fbff;border:1px solid #e0f2e9;border-radius:14px;padding:16px 20px;color:#111827;text-decoration:none;flex:1;min-width:240px;transition:.25s;}
+.page-nav a:hover{border-color:#28c76f;}
+.page-nav a small{display:block;color:#9ca3af;font-size:13px;margin-bottom:4px;}
+@media(max-width:768px){.subpage h1{font-size:32px;}.benefits-grid{grid-template-columns:1fr;}.blog-grid{grid-template-columns:1fr;}}
+
+a.resource-card{
+  text-decoration:none;
+  color:inherit;
+  display:block;
+}

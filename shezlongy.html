@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бот для бронювання шезлонгів на пляжі в Telegram</title>
+<meta name="description" content="Бот для шезлонгів: бронювання за часовими слотами, онлайн-оплата та QR-квитки. Для пляжів, басейнів та сонячних майданчиків. Тариф від 0 грн.">
+<meta name="keywords" content="бронювання шезлонгів, бот для пляжу, оренда шезлонгів онлайн, шезлонг бронювання телеграм, бронювання лежаків">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#28c76f">
+<meta name="author" content="BookingBot Platform">
+<link rel="canonical" href="https://bookingbot.pp.ua/shezlongy.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="BookingBot Platform">
+<meta property="og:title" content="Бот для бронювання шезлонгів у Telegram">
+<meta property="og:description" content="Бронювання шезлонгів за часовими слотами, оплата онлайн та QR-квитки.">
+<meta property="og:url" content="https://bookingbot.pp.ua/shezlongy.html">
+<meta property="og:image" content="https://bookingbot.pp.ua/assets/og-cover.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Бот для бронювання шезлонгів у Telegram">
+<meta name="twitter:description" content="Шезлонги за слотами, оплата онлайн, QR на вхід.">
+<meta name="twitter:image" content="https://bookingbot.pp.ua/assets/og-cover.jpg">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "BookingBot Platform", "item": "https://bookingbot.pp.ua/" },
+        { "@type": "ListItem", "position": 2, "name": "Бот для шезлонгів", "item": "https://bookingbot.pp.ua/shezlongy.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Як клієнт бронює шезлонг?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Обирає дату та часовий слот, оплачує онлайн і отримує QR-квиток." }
+        },
+        {
+          "@type": "Question",
+          "name": "Як контролювати кількість зайнятих шезлонгів?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ви задаєте максимальну кількість шезлонгів — система автоматично зупиняє продажі, коли ліміт вичерпано." }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи підходить для інших зон відпочинку?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Так, та сама схема працює для лежаків біля басейну, сонячних майданчиків та зон відпочинку." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container navbar">
+    <div class="logo"><a href="/" style="color:inherit;text-decoration:none;">Booking<span>Bot</span></a></div>
+    <nav>
+      <a href="/">Головна</a>
+      <a href="/#resources">Сценарії</a>
+      <a href="/blog.html">Блог</a>
+      <a href="/#tariffs">Тарифи</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a href="https://bot.bookingbot.pp.ua/admin/" class="btn-header" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
+  </div>
+</header>
+
+<section class="subpage">
+  <div class="container">
+    <nav class="breadcrumbs"><a href="/">Головна</a> → Бот для шезлонгів</nav>
+
+    <h1>Бот для бронювання шезлонгів у Telegram: слоти, оплата, QR</h1>
+    <p class="lead">Клієнт бронює шезлонг на конкретний час, оплачує заздалегідь і отримує QR-квиток. Ви контролюєте максимальну кількість лежаків і бачите зайнятість на день — без паперових записів.</p>
+
+    <div class="scenario-links">
+      <a href="/hotel.html">🏨 Готель</a>
+      <a href="/chan-sauna.html">🔥 Чан / сауна</a>
+      <a href="/baseyn.html">🏊 Басейн</a>
+      <a href="/prokat.html">🚲 Прокат</a>
+      <a href="/kvytky.html">🎟 Квитки та події</a>
+    </div>
+
+    <div class="prose">
+      <div class="highlight-box">
+        <h3>🔎 Як це працює для шезлонгів</h3>
+        <p>Ви вказуєте кількість шезлонгів, ціни та часові слоти. Клієнт у боті вибирає ще «вільний» шезлонг на свій час, оплачує онлайн і отримує PDF-квиток із QR. Персонал сканує QR на вході в зону відпочинку.</p>
+      </div>
+
+      <h2>Чому пляжі та зони відпочинку обирають BookingBot</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card"><h3>🏖 Слоти без суперечок</h3><p>Клієнт бачить лише вільні шезлонги — конфлікти «це місце зайнято» зникають.</p></div>
+        <div class="benefit-card"><h3>💳 Оплата онлайн</h3><p>Гроші на рахунку до відвідування, без готівки на пляжі.</p></div>
+        <div class="benefit-card"><h3>📊 Ліміт на день</h3><p>Автоматичне обмеження кількості лежаків на дату чи слот.</p></div>
+        <div class="benefit-card"><h3>🎫 QR на вхід</h3><p>Миттєва перевірка одноразових квитків.</p></div>
+        <div class="benefit-card"><h3>⚡ 24/7</h3><p>Бронювання і ввечері, і вранці до відкриття.</p></div>
+        <div class="benefit-card"><h3>📈 Звіти</h3><p>Скільки шезлонгів продано, коли пік попиту.</p></div>
+      </div>
+
+      <h2>Що вміє бот для шезлонгів</h2>
+      <ol class="steps-list">
+        <li><strong>Часові слоти</strong> — погодинна або більш зручна сітка для вашого пляжу.</li>
+        <li><strong>Максимальна кількість</strong> — ліміт шезлонгів на слот/день.</li>
+        <li><strong>Онлайн-оплата</strong> — картка, Monobank, Hutko, IBAN.</li>
+        <li><strong>PDF-квиток з QR</strong> — автоматично в Telegram.</li>
+        <li><strong>QR-сканер</strong> — перевірка на вході за секунди.</li>
+        <li><strong>Календар зайнятості</strong> — вся зайнятість на одному екрані.</li>
+      </ol>
+
+      <h2>Скільки це коштує</h2>
+      <p>Базовий тариф — <strong>0 грн/міс</strong> (до 20 бронювань), Стандарт — <strong>499 грн/міс</strong>. Налаштування бота «під ключ» — <strong>1999 грн</strong> разово.</p>
+
+      <div class="highlight-box">
+        <h3>Як почати безкоштовно</h3>
+        <ol class="steps-list" style="margin-top:6px;">
+          <li>Зареєструйтесь в адмінпанелі.</li>
+          <li>Додайте шезлонги, ціни та слоти.</li>
+          <li>Увімкніть оплату.</li>
+          <li>Поставте QR-код з ботом на вході в зону відпочинку.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="/blog.html"><small>&larr; Блог</small>Статті про автоматизацію бронювання</a>
+      <a href="/"><small>&rarr; Головна</small>Всі сценарії та тарифи BookingBot</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="container">
+    <h2>Автоматизуйте бронювання шезлонгів</h2>
+    <p>Слоти, оплата та QR-контроль без готівки і паперу. Почніть безкоштовно.</p>
+    <div class="cta-buttons">
+      <a href="https://bot.bookingbot.pp.ua/admin/" class="btn" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
+      <a href="https://telegram.me/sistadmin" class="btn-outline">Написати в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>Booking<span style="color:#28c76f">Bot</span></h3>
+      <p>SaaS-платформа для автоматизації бронювання, онлайн-оплати та контролю доступу.</p>
+    </div>
+    <div>
+      <h4>Сценарії</h4>
+      <a href="/hotel.html">Готель</a>
+      <a href="/chan-sauna.html">Чан / сауна</a>
+      <a href="/baseyn.html">Басейн</a>
+      <a href="/prokat.html">Прокат</a>
+      <a href="/kvytky.html">Квитки та події</a>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <a href="https://telegram.me/sistadmin">Telegram</a>
+      <a href="mailto:kikikiska@gmail.com">Email</a>
+    </div>
+    <div>
+      <h4>Демо та підтримка</h4>
+      <a href="https://t.me/ZarichnaLUX_bot" target="_blank" rel="noopener">Демо-бот</a>
+      <a href="/blog.html">Блог</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 BookingBot Platform. Усі права захищено.</div>
+</footer>
+
+</body>
+</html>

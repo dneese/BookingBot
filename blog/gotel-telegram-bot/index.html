@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Як налаштувати бронювання готелю в Telegram без програміста</title>
+<meta name="description" content="Покрокова інструкція, як створити Telegram-бота для бронювання номерів: каталог, ціни, онлайн-оплата та QR-квитки. Без програміста, за 2–3 дні.">
+<meta name="keywords" content="бронювання готелю в телеграм, як налаштувати бота для готелю, бот для готелю без програміста, онлайн бронювання номерів">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#28c76f">
+<meta name="author" content="BookingBot Platform">
+<link rel="canonical" href="https://bookingbot.pp.ua/blog/gotel-telegram-bot/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="BookingBot Platform">
+<meta property="og:title" content="Як налаштувати бронювання готелю в Telegram без програміста">
+<meta property="og:description" content="Покрокова інструкція створення бота для бронювання номерів без коду.">
+<meta property="og:url" content="https://bookingbot.pp.ua/blog/gotel-telegram-bot/">
+<meta property="og:image" content="https://bookingbot.pp.ua/assets/og-cover.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Як налаштувати бронювання готелю в Telegram без програміста">
+<meta name="twitter:description" content="Покрокова інструкція створення бота для бронювання номерів без коду.">
+<meta name="twitter:image" content="https://bookingbot.pp.ua/assets/og-cover.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Як налаштувати бронювання готелю в Telegram без програміста",
+  "description": "Покрокова інструкція створення Telegram-бота для бронювання номерів: каталог, ціни, онлайн-оплата та QR-квитки.",
+  "inLanguage": "uk",
+  "publisher": { "@type": "Organization", "name": "BookingBot Platform" },
+  "mainEntityOfPage": "https://bookingbot.pp.ua/blog/gotel-telegram-bot/",
+  "datePublished": "2026-09-22"
+}
+</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container navbar">
+    <div class="logo"><a href="/" style="color:inherit;text-decoration:none;">Booking<span>Bot</span></a></div>
+    <nav>
+      <a href="/">Головна</a>
+      <a href="/#resources">Сценарії</a>
+      <a href="/blog.html">Блог</a>
+      <a href="/#tariffs">Тарифи</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a href="https://bot.bookingbot.pp.ua/admin/" class="btn-header" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
+  </div>
+</header>
+
+<section class="subpage">
+  <div class="container">
+    <nav class="breadcrumbs"><a href="/">Головна</a> → <a href="/blog.html">Блог</a> → Як налаштувати бронювання готелю</nav>
+
+    <h1>Як налаштувати бронювання готелю в Telegram без програміста</h1>
+    <p class="article-meta">22.09.2026 · 7 хв читання · <a href="https://telegram.me/sistadmin">За питань — Telegram</a></p>
+
+    <div class="prose">
+      <p>У готелів, котеджів та апартаментів є одне «сліпе місце»: рецепція працює з 9 до 21, а клієнт думає про бронювання о 23:00. Усі вікна заявок, переписки в Instagram й телефонні дзвінки призводять до одного — загублених бронювань.</p>
+      <p>Рішення — Telegram-бот, який приймає бронювання 24/7: клієнт обирає номер, дати, оплачує онлайн і отримує QR-квиток. Найкраща новина — для цього не потрібен програміст. Ось покрокова інструкція.</p>
+
+      <h2>Крок 1. Створіть акаунт у BookingBot</h2>
+      <p>Зареєструйтеся в <a href="https://bot.bookingbot.pp.ua/admin/">адмінпанелі</a>. Усе налаштування відбувається у веб-інтерфейсі — без коду та серверів.</p>
+
+      <h2>Крок 2. Додайте категорії та номери</h2>
+      <p>Створіть категорії: «Стандарт», «Сімейний», «Котедж», «Апартаменти». Для кожного номера додайте фото, опис, місткість і ціну за добу. Це і є ваш каталог, який бачитиме клієнт.</p>
+
+      <h2>Крок 3. Налаштуйте ціни та правила</h2>
+      <p>Вкажіть ціни на будні, вихідні та свята. Задайте правила бронювання: скільки ночей мінімум, за скільки діб приймати заявки, скільки неоплачених броней тримати.</p>
+
+      <h2>Крок 4. Увімкніть онлайн-оплату</h2>
+      <p>Підключіть оплату карткою (Monobank або Hutko), або вкажіть IBAN для банківського переказу. Після оплати бот автоматично підтверджує бронювання.</p>
+
+      <h2>Крок 5. Опублікуйте бота</h2>
+      <p>Натисніть «Опублікувати» — і бот готовий. Клієнт відкриває його в Telegram, бронює та оплачує сам. Ви отримуєте повідомлення про кожне бронювання та бачите календар зайнятості.</p>
+
+      <div class="highlight-box">
+        <h3>💡 Не хочете робити самі?</h3>
+        <p>Замовте <strong>налаштування «під ключ» за 1999 грн</strong>: ми створимо та налаштуємо бота, завантажимо каталог номерів, підключимо платіжні системи — готовий бот за 2–3 дні. <a href="https://telegram.me/sistadmin">Написати в Telegram</a></p>
+      </div>
+
+      <h2>Що ви отримуєте на виході</h2>
+      <ul>
+        <li>Бронювання 24/7 без дзвінків;</li>
+        <li>Жодних подвійних бронювань — автоматичний календар;</li>
+        <li>Оплату наперед — менше відмов і неявок;</li>
+        <li>QR-квитки — швидкий заїзд без паперових списків;</li>
+        <li>Статистику виторгу та завантаженості.</li>
+      </ul>
+
+      <p>Спробувати, як це виглядає для клієнта, можна у нашому <a href="https://t.me/ZarichnaLUX_bot" target="_blank" rel="noopener">демо-боті</a>.</p>
+
+      <p><strong>Радимо прочитати далі:</strong> <a href="/blog/chy-potriben-bot-dlya-biznesu/">чи потрібен вашому бізнесу Telegram-бот</a> та <a href="/hotel.html">сторінку «Бот для готелю»</a>.</p>
+    </div>
+
+    <div class="page-nav">
+      <a href="/blog.html"><small>&larr; Блог</small>Всі статті</a>
+      <a href="/blog/yak-zbilshyty-prybutok-chana/"><small>&rarr; Наступна</small>Як збільшити прибуток чана або сауни</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="container">
+    <h2>Готові запустити бота цього тижня?</h2>
+    <p>Почніть безкоштовно на базовому тарифі або замовте налаштування під ключ.</p>
+    <div class="cta-buttons">
+      <a href="https://bot.bookingbot.pp.ua/admin/" class="btn" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
+      <a href="https://telegram.me/sistadmin" class="btn-outline">Написати в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>Booking<span style="color:#28c76f">Bot</span></h3>
+      <p>SaaS-платформа для автоматизації бронювання, онлайн-оплати та контролю доступу.</p>
+    </div>
+    <div>
+      <h4>Сценарії</h4>
+      <a href="/hotel.html">Готель</a>
+      <a href="/chan-sauna.html">Чан / сауна</a>
+      <a href="/baseyn.html">Басейн</a>
+      <a href="/prokat.html">Прокат</a>
+      <a href="/kvytky.html">Квитки та події</a>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <a href="https://telegram.me/sistadmin">Telegram</a>
+      <a href="mailto:kikikiska@gmail.com">Email</a>
+    </div>
+    <div>
+      <h4>Демо та підтримка</h4>
+      <a href="https://t.me/ZarichnaLUX_bot" target="_blank" rel="noopener">Демо-бот</a>
+      <a href="/blog.html">Блог</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 BookingBot Platform. Усі права захищено.</div>
+</footer>
+
+</body>
+</html>
