@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Подобова оренда квартир у Telegram: як автоматизувати заселення без рецепції</title>
+<meta name="description" content="Як налаштувати бота для подобової оренди квартир: каталог квартир, онлайн-оплата, заселення без дзвінків, QR-доступ та автоматичне завдання для клінера. За 2–3 дні, без програміста.">
+<meta name="keywords" content="подобова оренда квартир, бот для подобової оренди, оренда квартир онлайн, заселення в квартиру, онлайн оплата подобово">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#28c76f">
+<meta name="author" content="BookingBot Platform">
+<link rel="canonical" href="https://bookingbot.pp.ua/blog/podobova-orenda-kvartyry/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="BookingBot Platform">
+<meta property="og:title" content="Подобова оренда квартир у Telegram: автоматизація без рецепції">
+<meta property="og:description" content="Бот для подобової оренди: каталог квартир, онлайн-оплата, QR-доступ та автозавдання для клінера. За 2–3 дні без програміста.">
+<meta property="og:url" content="https://bookingbot.pp.ua/blog/podobova-orenda-kvartyry/">
+<meta property="og:image" content="https://bookingbot.pp.ua/assets/og-cover.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Подобова оренда квартир у Telegram: автоматизація без речей">
+<meta name="twitter:description" content="Бот для подобової оренди: каталог квартир, онлайн-оплата, QR-доступ.">
+<meta name="twitter:image" content="https://bookingbot.pp.ua/assets/og-cover.jpg">
+
+<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Подобова оренда квартир у Telegram: як автоматизувати заселення без речей",
+  "description": "Як налаштувати бота для подобової оренди квартир: каталог квартир, онлайн-оплата, заселення без дзвінків, QR-доступ та автоматичне завдання для клінера.",
+  "inLanguage": "uk",
+  "publisher": { "@type": "Organization", "name": "BookingBot Platform" },
+  "mainEntityOfPage": "https://bookingbot.pp.ua/blog/podobova-orenda-kvartyry/",
+  "datePublished": "2026-09-23"
+}
+</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container navbar">
+    <div class="logo"><a href="/" style="color:inherit;text-decoration:none;">Booking<span>Bot</span></a></div>
+    <nav>
+      <a href="/">Головна</a>
+      <a href="/#resources">Сценарії</a>
+      <a href="/blog.html">Блог</a>
+      <a href="/#tariffs">Тарифи</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <a href="https://bot.bookingbot.pp.ua/admin/" class="btn-header" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
+  </div>
+</header>
+
+<section class="subpage">
+  <div class="container">
+    <nav class="breadcrumbs"><a href="/">Головна</a> → <a href="/blog.html">Блог</a> → Подобова оренда квартир</nav>
+
+    <h1>Подобова оренда квартир у Telegram: як автоматизувати заселення без речей</h1>
+    <p class="article-meta">23.09.2026 · 7 хв читання · <a href="https://telegram.me/sistadmin">За питань — Telegram</a></p>
+
+    <div class="prose">
+      <p>Подобова оренда — це бізнес на швидкості: гість шукає квартиру зараз, наймає сьогодні, заселяється ввечері. Якщо ви відповідаєте на дзвінки годину, а «забули» перевірити зайнятість — бронь іде конкуренту. Бот не спить, не «гуглить» календар і не плутає дати.</p>
+      <p>Розповідаємо, як перевести подобову оренду на автоматизацію за 2–3 дні, без програміста.</p>
+
+      <h2>Що відбувається без бота</h2>
+      <ul>
+        <li>гість написав у Viber о 23:00 — ви відповіли вранці;</li>
+        <li>дві квартири виявилися заброньовані двічі на ті ж дати;</li>
+        <li>передоплату «деяким коштом» довелося перепитувати вп'ятеро;</li>
+        <li>адреса і час заселення загубилися серед переписки.</li>
+      </ul>
+      <p>Це не проблема «неорганізованого власника» — це відсутність системи. Бот бере найбільш відповідальні рутинні кроки на себе.</p>
+
+      <h2>Як працює бот для подобової оренди</h2>
+      <p>Ви створюєте каталог квартир в адмінпанелі: назва, фотографії, опис, ціна за добу, місткість і адреса. Далі клієнт сам, без вас:</p>
+      <ul>
+        <li>обирає квартиру та дати заїзду/виїзду;</li>
+        <li>бачить розрахунок вартості (доби × ціна, мінімум ночей);</li>
+        <li>оплачує бронь карткою онлайн;</li>
+        <li>отримує в чат усі деталі: адресу, час заселення, контакти.</li>
+      </ul>
+      <p>Жодного внесення паспортних даних на сайті, реєстрації чи додатка. Все — у звичному Telegram.</p>
+
+      <h2>Кілька квартир = керований номерний фонд</h2>
+      <p>Навіть якщо у вас 2–3 квартири, потрібно точно знати, що вільне на ці дати. Бот враховує <a href="/blog/upravlinnya-nomernym-fondom/">номерний фонд</a>: скільки квартир, якої місткості й коли вони зайняті. Ви бачите календар завантаженості, гість бачить тільки реально вільні дати.</p>
+      <p>Подвійного продажу не існує в принципі — продане значення зникає з пропозиції автоматично.</p>
+
+      <div class="highlight-box">
+        <h3>💡 Технічна перерва на прибирання</h3>
+        <p>Для готелю до 1000 номерів система враховує результати, а для квартир — час між заїздом і виїздом клінера. Ви закладаєте годину на прибирання, і система просто не пропонує цю добу наступному гостю. <a href="https://telegram.me/sistadmin">Описати ваші квартири в Telegram</a></p>
+      </div>
+
+      <h2>Заселення без зустрічі: QR-доступ</h2>
+      <p>Вам не потрібно передавати ключі особисто. Після оплати гість отримує QR-квиток, а ви — можливість видати доступ електронними замками або передати ключ у боксі <strong>smart box</strong>. QR-пропускна система показує коду, чи оплачена бронь, і не дає зайти вдруге тим самим кодом.</p>
+      <p>Детальніше про механізм — у статті про <a href="/blog/qr-propyskna-systema/">QR-контроль доступу</a>.</p>
+
+      <h2>Що змінюється для власника</h2>
+      <ul>
+        <li>заявки 24/7 — нічний гість не «відклеюється» до ранку;</li>
+        <li>передоплата — менше неявок та «передумав»;</li>
+        <li>нуль подвійних броней і нуль загублених контактів;</li>
+        <li>виторг і завантаженість — у статистиці адмінпанелі;</li>
+        <li>звільнений час — ви не «прибиті» до телефону.</li>
+      </ul>
+
+      <h2>З чого почати</h2>
+      <p>Зареєструйтеся в адмінпанелі, додайте першу квартиру з фото та цінами, увімкніть оплату — і опублікуйте бота. Весь процес займає кілька годин; безкоштовний тариф дає 20 бронювань на місяць.</p>
+
+      <p>Споріднені сценарії: <a href="/hotel.html">бота для готелю</a> або для <a href="/prokat.html">прокату</a>. Спробуйте, як це виглядає для гостя, у <a href="https://t.me/ZarichnaLUX_bot" target="_blank" rel="noopener">демо-боті</a>.</p>
+    </div>
+
+    <div class="page-nav">
+      <a href="/blog.html"><small>&larr; Блог</small>Всі статті</a>
+      <a href="/blog/upravlinnya-nomernym-fondom/"><small>&rarr; Наступна</small>Як бот керує номерним фондом</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="container">
+    <h2>Автоматизуйте свою подобову оренду</h2>
+    <p>Почніть безкоштовно на базовому тарифі або замовте налаштування під ключ.</p>
+    <div class="cta-buttons">
+      <a href="https://bot.bookingbot.pp.ua/admin/" class="btn" target="_blank" rel="noopener">Зареєструватись / Увійти</a>
+      <a href="https://telegram.me/sistadmin" class="btn-outline">Написати в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>Booking<span style="color:#28c76f">Bot</span></h3>
+      <p>SaaS-платформа для автоматизації бронювання, онлайн-оплати та контролю доступу.</p>
+    </div>
+    <div>
+      <h4>Сценарії</h4>
+      <a href="/hotel.html">Готель</a>
+      <a href="/chan-sauna.html">Чан / сауна</a>
+      <a href="/baseyn.html">Басейн</a>
+      <a href="/prokat.html">Прокат</a>
+      <a href="/kvytky.html">Квитки та події</a>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <a href="https://telegram.me/sistadmin">Telegram</a>
+      <a href="mailto:kikikiska@gmail.com">Email</a>
+    </div>
+    <div>
+      <h4>Демо та підтримка</h4>
+      <a href="https://t.me/ZarichnaLUX_bot" target="_blank" rel="noopener">Демо-бот</a>
+      <a href="/blog.html">Блог</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 BookingBot Platform. Усі права захищено.</div>
+</footer>
+
+</body>
+</html>
